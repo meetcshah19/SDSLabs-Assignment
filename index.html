@@ -1,0 +1,314 @@
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+    <script>
+        function a(){
+            document.getElementById('ps').scrollIntoView({
+  behavior: 'smooth'
+});
+        }
+    </script>
+    <style>
+        .parent-first{
+            display: flex;
+            /* background: url("https://image.shutterstock.com/z/stock-vector-sketch-bulb-idea-at-transparent-effect-background-577869535.jpg"); */
+            height:100vh;
+            width: 100vw;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .parent-second{
+           
+            display: flex;
+            height:50%;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 2%;
+        }
+        .parent-third{
+
+            display: flex;
+            height:100%;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .image-container-1{
+            display: flex;
+            width: 100%;
+            height: 50%;
+            object-fit: cover;
+            justify-content: center;
+            text-align: left;
+            font-family: 'Bangers', cursive;
+            font-size: 4vw;
+            
+            flex-direction: column;
+        }
+        .info{
+            display: flex;
+            width:50%;
+            height: 30%;
+            justify-content: center;
+        }
+        .wtext{
+            text-align: center;
+            font-family: 'Bangers', cursive;
+            font-size: 60px;
+            width: 100%;
+            margin:auto;
+        }
+
+        .button{
+            margin :auto;
+            justify-content: center;
+            width: 100%;
+            display: flex;
+        }
+
+        .wbutton{
+            font-family: 'Bangers', cursive;
+            transition: color 0.2s ease;
+            font-size: 3vw;
+            margin: 0 auto;
+            border: 2px solid #555555;
+            background-color: white;
+            height: 10%;
+            width: 20%;
+        }
+        .wbutton2{
+            font-family: 'Bangers', cursive;
+            transition: color 0.2s ease;
+            font-size: 3vw;
+            margin: 0 auto;
+            border: 2px solid #555555;
+            background-color: white;
+            height: 20%;
+            width: 40%;
+            /* justify-self: center; */
+           
+        }
+        .wbutton:hover {
+
+            
+            color: white;
+            
+            background-color: black;
+        }
+        .wbutton2:hover {
+
+            
+color: white;
+
+background-color: black;
+}
+        .c1 {
+            height: 50px;
+            width: 50px;
+            left: 14%;
+            z-index: -1;
+            padding: 7%;
+            background-color: rgba(102, 255, 255,0.5);
+            border-radius: 50%;
+            position: absolute;
+            animation-name: c1;
+            animation-duration: 10s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+
+        .c2 {
+            height: 50px;
+            width: 50px;
+            left: 8%;
+            top: 70%;
+            z-index: -1;
+            padding: 54;
+            background-color: rgba(209, 65, 185, 0.5);
+            border-radius: 50%;
+            position: absolute;
+            animation-name: c2;
+            animation-duration: 6s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+        .c3 {
+            height: 50px;
+            width: 50px;
+            left: 64%;
+            z-index: -1;
+            padding: 7%;
+            background-color: rgba(211, 111, 45, 0.4);
+            border-radius: 50%;
+            position: absolute;
+            animation-name: c1;
+            animation-duration: 11s;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+        .child{
+            display: flex;
+            height:50%;
+            width:40%;
+            /* flex-grow: 1; */
+        }
+        .c4 {
+            height: 50px;
+            width: 50px;
+            left: 88%;
+            top: 70%;
+            z-index: -1;
+            padding: 54;
+            background-color: rgba(121, 199, 33, 0.3);
+            border-radius: 50%;
+            position: absolute;
+            animation-name: c2;
+            animation-duration: 8s;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+        .text{
+            display: flex;
+            
+            height: 100%;
+            width: 100%;
+            padding: 2%;
+            font-size: 3vh ;
+        }
+        .FM{
+            display: flex;
+            text-decoration: none;
+            height: 50%;
+            width: 100%;
+            /* justify-content: center; */
+            margin: 0 auto;
+            flex-direction: column;
+            
+        }
+        .form{
+            display:flex;
+
+        }
+        .footer{
+            display: flex;
+            /* background: url("https://image.shutterstock.com/z/stock-vector-sketch-bulb-idea-at-transparent-effect-background-577869535.jpg"); */
+            height:10vh;
+            width: 100%;
+            justify-content: center;
+            font-size: 4vw;
+            background-color: black;
+            color: white;
+        }
+        .ft{
+            text-align: center;
+            font-family: 'Bangers', cursive;
+            font-size: 4vw;
+            width: 100%;
+            margin:auto;
+        }
+        .child2{
+            font-family: 'Bangers', cursive;
+            display: flex;
+            width: 60%;
+            height:50%;
+            justify-content: center;
+        }
+        @keyframes c2 {
+  from {top:0%;}
+  to {top:70%;}
+}
+@keyframes c1 {
+  from {top:60%;}
+  to {top:0%;}
+}
+        @media only screen and (min-width: 768px) {
+          /* For desktop: */
+            .parent-third{
+                height: 100%;
+            }
+            .image-container-1{
+                width: 50%;
+                height: 100%;
+            }
+            .text{
+                height: 50%;
+            }
+            .FM{
+                height: 50%;
+                padding: 2%;
+                justify-content: center;
+            }
+            .wbutton2{
+                font-size: 2vw;
+            }
+            .parent-third{
+                height: 50%;
+            }
+            .ft{
+                font-size: 40px;
+            }
+            .child2{
+                height: 100%;
+                width:30%;
+            }
+            .child{
+                width:20%;
+                height:100%;
+            }
+            .parent-second{
+                height:25%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="c1"></div>
+    <div class="c2"></div>
+    <div class="c3"></div>
+    <div class="c4"></div>
+    <div class="parent-first">
+       <div class="wtext">
+           Welcome to Meet's Portfolio !
+       </div>
+       <div class="button">
+        <button class="wbutton" onclick="a()">Know More!&nbsp;&#11015;</button>
+       </div>
+    </div>
+    <div class="parent-third" id="ps">
+        <div class="image-container-1"><img src="a.jpg" style="height:100%;width: auto;"></div>
+        <div class="image-container-1"><div class="text">Meet Shah<br><br>Freshman at IIT Roorkee<br>Passionate about Computer Science and Chess<br><br>Some of my online profiles are linked below</div><a class="FM" href="mailto:meetcshah19@gmail.com"><button class="wbutton2">Mail Me</button></a></div>
+        
+    </div>
+    <div class="parent-second">
+        <a class="child" href="https://github.com/meetcshah19/" >
+            <!-- <div class="child"> -->
+            <img src="git.png" style="width:auto;height: 100%;">
+        <!-- </div> -->
+    </a>
+    <div class="child2">
+            <div class="text">Github<br><br>Tenzin<br>Chess Engine&nbsp;(For Noobs) <br>BankApp</div>
+    </div>
+    <a class="child" href="https://github.com/meetcshah19/" >
+        <!-- <div class="child"> -->
+        <img src="lichess.png" style="width:auto;height: 100%;">
+    <!-- </div> -->
+    </a>
+    <div class="child2">
+        <div class="text">Lichess<br><br>I Love shorter time formats!<br>Bullet is :3<br>Magnus is the all time best player.<br>D4 is :3</div>
+    </div>
+        
+    </div>
+    <div class="footer">
+        <div class="ft">
+            Visit codingfreak98's absolutely awesome youtube channel :&nbsp;&nbsp; <a href="https://www.youtube.com/channel/UC4LgxrgFrpx2S01JBoO2nzg" style="text-decoration: none;"><img src="yt.png" style="height:45px;width:45px;"></a>
+        </div>
+    </div>
+</body>
+
+
+</html>
