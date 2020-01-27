@@ -91,13 +91,13 @@
         }
         .wbutton:hover {
 
-            
+            cursor:pointer;
             color: white;
             
             background-color: black;
         }
         .wbutton2:hover {
-
+            cursor:pointer;
             
 color: white;
 
@@ -177,7 +177,7 @@ background-color: black;
             
             height: 100%;
             width: 100%;
-            padding: 2%;
+            /* padding: 2%; */
             font-size: 3vh ;
         }
         .FM{
@@ -198,7 +198,7 @@ background-color: black;
             display: flex;
             /* background: url("https://image.shutterstock.com/z/stock-vector-sketch-bulb-idea-at-transparent-effect-background-577869535.jpg"); */
             height:10vh;
-            width: 100%;
+            width: 110%;
             justify-content: center;
             font-size: 4vw;
             background-color: black;
@@ -219,14 +219,14 @@ background-color: black;
             justify-content: center;
         }
         @keyframes c2 {
-  from {top:0%;}
-  to {top:70%;}
-}
-@keyframes c1 {
-  from {top:60%;}
-  to {top:0%;}
-}
-        @media only screen and (min-width: 768px) {
+            from {top:0%;}
+            to {top:70%;}
+        }
+        @keyframes c1 {
+            from {top:60%;}
+            to {top:0%;}
+        }
+@media only screen and (min-width: 600px) {
           /* For desktop: */
             .parent-third{
                 height: 100%;
@@ -237,6 +237,7 @@ background-color: black;
             }
             .text{
                 height: 50%;
+                /* width:30%; */
             }
             .FM{
                 height: 50%;
@@ -266,7 +267,7 @@ background-color: black;
         }
     </style>
 </head>
-<body>
+<body style="margin: 0;overflow-x: hidden;">
     <div class="c1"></div>
     <div class="c2"></div>
     <div class="c3"></div>
@@ -280,7 +281,7 @@ background-color: black;
        </div>
     </div>
     <div class="parent-third" id="ps">
-        <div class="image-container-1"><img src="a.jpg" style="width:60%;margin-left: auto; margin-right: auto;"></div>
+        <div class="image-container-1"><img src="a.jpg" style="height:100%;margin-left: auto; margin-right: auto;"></div>
         <div class="image-container-1"><div class="text">Meet Shah<br><br>Freshman at IIT Roorkee<br>Passionate about Computer Science and Chess<br><br>Some of my online profiles are linked below</div><a class="FM" href="mailto:meetcshah19@gmail.com"><button class="wbutton2">Mail Me</button></a></div>
         
     </div>
